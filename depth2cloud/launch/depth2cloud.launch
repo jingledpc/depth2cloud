@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="depth2cloud" name="depth2cloud_node" type="depth2cloud_node">
+    </node>
+     <!--node type="rviz" name="rviz" pkg="rviz" args="-d $(find deal_order)/rviz/marker.rviz" /-->
+</launch>

@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/hit/Fast-DDS/install/fastrtps/include/**",
+        "/home/hit/Fast-DDS/install/foonathan_memory_vendor/include/**",
+        "/home/hit/Fast-DDS/install/fastcdr/include/**",
+        "/opt/ros/melodic/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

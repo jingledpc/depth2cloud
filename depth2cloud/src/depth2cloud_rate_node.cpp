@@ -86,8 +86,8 @@ void depth_Callback(const sensor_msgs::ImageConstPtr& depth_msg)
     // ROS_INFO("point cloud size = %d",cloud->width);
     cloud->is_dense = false;
     pcl::toROSMsg(*cloud,pub_pointcloud);
-    pub_pointcloud.header.frame_id = pointcloudFrame;
-    //pub_pointcloud.header.frame_id = depth_ptr->header.frame_id;
+    //pub_pointcloud.header.frame_id = pointcloudFrame;
+    pub_pointcloud.header.frame_id = depth_ptr->header.frame_id;
     pub_pointcloud.header.stamp = depth_ptr->header.stamp;
     pub_cloud.publish(pub_pointcloud);
     cloud->points.clear();

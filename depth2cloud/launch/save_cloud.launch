@@ -1,5 +1,8 @@
 <launch>
     <node pkg="depth2cloud" name="save_cloud" type="save_cloud">
+        <param name="path" value="/home/pc/rospakage/other/draw_box/src/depth2cloud/depth2cloud/pcd/"/>
+        <param name="topic_sub" value="/velodyne_points"/>
+        
     </node>
      <!--node type="rviz" name="rviz" pkg="rviz" args="-d $(find deal_order)/rviz/marker.rviz" /-->
 </launch>
